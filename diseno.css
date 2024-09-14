@@ -12,3 +12,8 @@ body {
     font-family: Arial, sans-serif; /* Cambia la fuente */
     color: white; /* Cambia el color del texto */
 }
+.container {
+    border: red 2px solid;
+    margin: 20px;
+    background-color: rgba(240, 248, 255, 0.37);
+}

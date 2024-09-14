@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseno.css"> 
-    <title>Welcome Login</title>
+    <link rel="stylesheet" href="diseno.css">
+    <title>Login & Registro</title>
 </head>
 <body>
-    <h1>Mumu formulario</h1>
-    <form action="/my-handling-form-page" method="post">
+  <div class="container">
+    <!-- Login Formulario -->
+    <div class="card">
+      <h1>Iniciar Sesión</h1>
+      <form id="loginForm">
         <ul>
           <li>
-            <label for="name">Correo electrónico:</label>
-            <input type="text" id="name" name="user_name" />
+            <label for="login_mail">Correo Electrónico:</label>
+            <input type="email" id="login_mail" name="login_mail" placeholder="Ingrese su correo" required />
           </li>
           <li>
-            <label for="mail">Contraseña</label>
-            <input type="email" id="mail" name="user_mail" />
+            <label for="login_password">Contraseña:</label>
+            <input type="password" id="login_password" name="login_password" placeholder="Ingrese su contraseña" required />
           </li>
-        </ul> 
+          <li>
+            <button type="submit">Ingresar</button>
+            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p> 
+          </li>
+        </ul>
       </form>
-</body>
-</html>
+    </div>
