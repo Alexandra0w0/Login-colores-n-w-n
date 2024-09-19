@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="diseno.css">
-    <body>
-    <div class="card">
-        <h1>Crear una Cuenta</h1>
-        <form id="registerForm">
-          <ul>
-            <li>
-              <label for="register_name">Nombre Completo:</label>
-              <input type="text" id="register_name" name="register_name" placeholder="Ingrese su nombre" required />
-            </li>
-            <li>
-              <label for="register_mail">Correo Electrónico:</label>
-              <input type="email" id="register_mail" name="register_mail" placeholder="Ingrese su correo" required />
-            </li>
-            <li>
-              <label for="register_password">Contraseña:</label>
-              <input type="password" id="register_password" name="register_password" placeholder="Cree una contraseña" required />
-            </li>
-            <li>
-              <button type="submit">Registrarse</button>
-            </li>
-          </ul>
-        </form>
-      </div>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Crear una Cuenta</h1>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="register_name">Nombre</label>
+                    <input type="text" id="register_name" name="register_name" placeholder="Ingrese su nombre" required />
+                </div>
+                <form id="registerForm">
+                  <div class="form-group">
+                      <label for="register_a_aterno">Apellido Paterno:</label>
+                      <input type="text" id="register_name" name="register_name" placeholder="Ingrese su apellido paterno" required />
+                  </div>
+                  <form id="registerForm">
+                    <div class="form-group">
+                        <label for="register_name">Apellido Materno:</label>
+                        <input type="text" id="register_name" name="register_name" placeholder="Ingrese apellido materno" required />
+                    </div>
+                <div class="form-group">
+                    <label for="register_mail">Correo Electrónico:</label>
+                    <input type="email" id="register_mail" name="register_mail" placeholder="Ingrese su correo" required />
+                </div>
+                <div class="form-group">
+                    <label for="register_password">Contraseña:</label>
+                    <input type="password" id="register_password" name="register_password" placeholder="Cree una contraseña" required />
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                </div>
+                <p class="login-link">¿Ya tienes una cuenta? <a href="index.html">Inicia sesión aquí</a></p>
+            </form>
+        </div>
     </div>
-  </body>
-  </html>
+</body>
+</html>

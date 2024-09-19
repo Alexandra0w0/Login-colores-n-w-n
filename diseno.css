@@ -1,19 +1,82 @@
-/* diseno.css */
+/* General Styles */
 body {
     background: #12c2e9; /* Fallback para navegadores antiguos */
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh; /* Asegura que el fondo cubra toda la vista */
-    margin: 0; /* Quita el margen del body */
-    display: flex; /* Opcional: centra contenido */
-    flex-direction: column; /* Opcional: organiza el contenido en columna */
-    justify-content: center; /* Opcional: centra contenido horizontalmente */
-    align-items: center; /* Opcional: centra contenido verticalmente */
-    font-family: Arial, sans-serif; /* Cambia la fuente */
-    color: white; /* Cambia el color del texto */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .container {
-    border: red 2px solid;
-    margin: 20px;
-    background-color: rgba(240, 248, 255, 0.37);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.card {
+    background: #ffffffa2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(159, 164, 230, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #535252;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    background-color: #d400ff5e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: #3d86d431;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #b700ff9a;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }
